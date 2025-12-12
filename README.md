@@ -1,12 +1,12 @@
-Battle and Treasure Game
+#Battle and Treasure Game
 
 A simple console-based adventure game written in C.
 You explore a 5×5 grid, collect treasure, avoid enemies, and manage your health while navigating the map.
 This project demonstrates basic C concepts such as arrays, randomization, structures, loops, and interactive game logic — ideal for first-year programming students.
 
-Features
+##Features
 
-Move the player through a 5×5 grid (up, down, left, right).
+-Move the player through a 5×5 grid (up, down, left, right).
 
 Random placement of:
 
