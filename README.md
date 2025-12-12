@@ -1,114 +1,115 @@
-#Battle and Treasure Game
+# Battle and Treasure Game
 
-A simple console-based adventure game written in C.
-You explore a 5×5 grid, collect treasure, avoid enemies, and manage your health while navigating the map.
+A simple console-based adventure game written in C.  
+You explore a 5×5 grid, collect treasure, avoid enemies, and manage your health while navigating the map.  
 This project demonstrates basic C concepts such as arrays, randomization, structures, loops, and interactive game logic — ideal for first-year programming students.
 
-##Features
+---
 
--Move the player through a 5×5 grid (up, down, left, right).
+## Features
 
-Random placement of:
+- Move the player through a 5×5 grid (up, down, left, right).
+- Random placement of:
+  - **Treasure**
+  - **Enemies**
+  - **Empty spaces**
+- Player health system (starts at 100).
+- Encounter outcomes:
+  - Collect treasure
+  - Lose health if encountering enemies
+- Win condition when all treasures are collected.
+- Lose condition when health reaches 0.
 
-Treasure
+---
 
-Enemies
+## Requirements
+- GCC or any standard C compiler.
 
-Empty spaces
+---
 
-Player health system (starts at 100).
-
-Encounter outcomes:
-
-Collect treasure
-
-Lose health if encountering enemies
-
-Win condition when all treasures are collected.
-
-Lose condition when health reaches 0.
-
-Requirements
-
-GCC or any standard C compiler.
-
-Build
+## Build
 
 To compile the game:
 
+```
 gcc battle_treasure_game.c -o battle_game
+```
 
-Run
-Linux / macOS
+---
+
+## Run
+
+### Linux / macOS
+```
 ./battle_game
+```
 
-Windows
+### Windows
+```
 battle_game.exe
+```
 
-Gameplay
+---
 
-After running the program:
+## Gameplay
 
-Use numeric controls to move:
+After running the program, use numeric controls to move:
 
-1 – Move Up
+- `1` – Move Up  
+- `2` – Move Down  
+- `3` – Move Left  
+- `4` – Move Right  
 
-2 – Move Down
+Additional details:
+- The grid updates after each move.  
+- Health decreases when encountering enemies.  
+- Treasure increases your score.  
+- Game ends when:  
+  - **All treasures are collected (You win!)**  
+  - **Health reaches 0 (Game over)**
 
-3 – Move Left
+---
 
-4 – Move Right
+## Example Grid
 
-The grid updates after each move.
-
-Health decreases when encountering enemies.
-
-Treasure increases your score.
-
-Game ends when:
-
-All treasures are collected → You win!
-
-Health reaches 0 → Game over.
-
-Example Grid
+```
 @ . T . X
 . . . . .
 T . X . .
 . . . . T
 X . . . .
+```
 
-Symbols
+### Symbols
+- `@` – Player  
+- `T` – Treasure  
+- `X` – Enemy  
+- `.` – Empty  
 
-@ – Player
+---
 
-T – Treasure
+## Notes
 
-X – Enemy
+- Grid updates every move.  
+- Enemy and treasure positions are randomly generated each game (`rand()` + `srand(time(NULL))`).  
+- No game state is saved after exit.  
+- Designed for beginners learning arrays and interactive C programs.
 
-. – Empty
+---
 
-Notes
+## File Structure
 
-Grid updates every move.
-
-Enemy and treasure positions are randomly generated each game
-using rand() and srand(time(NULL)).
-
-No game state is saved after exit.
-
-Designed for beginners learning arrays and interactive C programs.
-
-File Structure
+```
 battle_treasure_game.c
 README.md
+```
 
-Future Improvements (Optional)
+---
 
-Add a score history file.
+## Future Improvements (Optional)
 
-Add multiple levels with increasing difficulty.
+- Add a score history file.  
+- Add multiple levels with increasing difficulty.  
+- Add sound or color-coded output in terminal.  
+- Add saving/loading of game progress.
 
-Add sound or color-coded output in terminal.
-
-Add saving/loading of game progress.
