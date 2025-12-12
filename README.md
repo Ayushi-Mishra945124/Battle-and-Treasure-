@@ -1,4 +1,4 @@
-B**attle and Treasure Game**
+Battle and Treasure Game
 
 A simple console-based adventure game written in C.
 You explore a 5×5 grid, collect treasure, avoid enemies, and manage your health while navigating the map.
@@ -78,18 +78,22 @@ T . X . .
 . . . . T
 X . . . .
 
+Symbols
 
-Symbols:
 @ – Player
+
 T – Treasure
+
 X – Enemy
+
 . – Empty
 
 Notes
 
 Grid updates every move.
 
-Enemy and treasure positions are randomly generated each game (using rand() and srand(time(NULL))).
+Enemy and treasure positions are randomly generated each game
+using rand() and srand(time(NULL)).
 
 No game state is saved after exit.
 
